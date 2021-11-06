@@ -91,6 +91,39 @@ public class tests {
         }
     }
 
+    public void decimalToFloat(){
+        System.out.println("To quit type quit");
+
+        while (true) {
+
+            System.out.print("What number do you want to learn with: ");
+            String userNumberString = scanner.next();
+            float userNumber = Float.parseFloat(userNumberString);
+            int number = Float.floatToIntBits(userNumber);
+            System.out.print("Your answer: ");
+            String userInput = scanner.next();
+            userInput = userInput.toLowerCase();
+
+
+            if (userInput.equals("quit")) {
+                System.out.println("-------------------------------------------");
+                System.out.println();
+                break;
+            }
+
+            if (userInput.equals(Integer.toBinaryString(number)) || userInput.equals(Integer.toHexString(number)))
+                System.out.println("Right answer!");
+
+            else {
+                System.out.println("Right answers");
+                System.out.println(Integer.toBinaryString(number));
+                System.out.println(Integer.toHexString(number));
+            }
+
+            System.out.println("-------------------------------------------");
+        }
+    }
+
 
     public void testProgram(){
         while(true) {
@@ -99,6 +132,7 @@ public class tests {
             System.out.println("1 Decimal to Binary");
             System.out.println("2 Decimal to Hexadecimal");
             System.out.println("3 Decimal to 2-complement hexa string");
+            System.out.println("4 Decimal to float");
 
             System.out.println();
             String userInput = scanner.next();
@@ -114,6 +148,10 @@ public class tests {
 
             else if (userInput.equals("3")){
                 decimalTo2Complement();
+            }
+
+            else if (userInput.equals("4")){
+                decimalToFloat();
             }
 
             else if(userInput.equals("quit")) {
