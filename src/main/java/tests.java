@@ -67,7 +67,7 @@ public class tests {
 
         while (true) {
 
-            int number = randomGenerator.nextInt(127) * -1;
+            int number = randomGenerator.nextInt(126) * -1;
             System.out.println("Convert this Number to a 2-complement string: " + number);
             System.out.print("Your answer: ");
             String userInput = scanner.next();
