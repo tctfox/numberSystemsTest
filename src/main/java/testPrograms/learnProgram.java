@@ -23,7 +23,7 @@ public abstract class learnProgram {
 
     public void mainProgram(){
         System.out.println(spacer);
-        System.out.println("To quit type quit");
+        System.out.println(ANSI_CYAN + "To quit type \"quit\"" + ANSI_RESET);
 
         notFinished = true;
         while (notFinished) {

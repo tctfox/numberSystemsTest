@@ -12,7 +12,7 @@ public class decimalToBinary extends learnProgram {
         String userInput = scanner.next();
 
         if (userInput.equals("quit")) {
-            System.out.println("-------------------------------------------");
+            System.out.println(spacer);
             System.out.println();
             notFinished = false;
         }
@@ -23,6 +23,6 @@ public class decimalToBinary extends learnProgram {
         }
         else
             System.out.println(ANSI_RED + "Wrong answer. The right answer is: " + answer + ANSI_RESET);
-        System.out.println("-------------------------------------------");
+        System.out.println(spacer);
     }
 }
