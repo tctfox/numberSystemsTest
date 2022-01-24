@@ -1,3 +1,5 @@
+package testPrograms;
+
 import testPrograms.*;
 
 import java.util.Random;
