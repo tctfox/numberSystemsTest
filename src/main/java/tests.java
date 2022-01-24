@@ -98,6 +98,13 @@ public class tests {
 
             System.out.print("What number do you want to learn with: ");
             String userNumberString = scanner.next();
+
+            if (userNumberString.equals("quit")){
+                System.out.println("-------------------------------------------");
+                break;
+            }
+
+
             float userNumber = Float.parseFloat(userNumberString);
             int number = Float.floatToIntBits(userNumber);
             System.out.print("Your answer: ");
