@@ -39,7 +39,7 @@ public class testProgram {
         System.out.println("1 Decimal to Binary");
         System.out.println("2 Decimal to Hexadecimal");
         System.out.println("3 Decimal to 2-complement hexa string");
-        System.out.println("4 Decimal to float");
+        System.out.println("4 Decimal to 32 bit float");
         System.out.print("Your answer: ");
         int input = scanner.nextInt();
         scanner.nextLine();

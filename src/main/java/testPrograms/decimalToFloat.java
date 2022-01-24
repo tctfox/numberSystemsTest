@@ -28,10 +28,10 @@ public class decimalToFloat extends learnProgram {
         }
 
         if (userInput.equals(Integer.toBinaryString(number)) || userInput.equals(Integer.toHexString(number)))
-            System.out.println("Right answer!");
+            System.out.println(ANSI_GREEN + "Right answer!" + ANSI_RESET);
 
         else {
-            System.out.println("Right answers");
+            System.out.println(ANSI_RED + "Wrong answer. The right answers are: " + ANSI_RESET);
             System.out.println(Integer.toBinaryString(number));
             System.out.println(Integer.toHexString(number));
         }
